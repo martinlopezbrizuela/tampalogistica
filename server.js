@@ -335,6 +335,63 @@ INSERT INTO configuration (key, value) VALUES ('company_name', 'AGROFORCE + TAMP
 INSERT INTO configuration (key, value) VALUES ('timezone', 'America/Asuncion')
   ON CONFLICT (key) DO NOTHING;
 
+-- PRODUCTOS TAMPA (catalogo inicial, cargado desde la lista de precios)
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('21', 'AUSTRAL WG', 'HERBICIDA', 'PYROXASULFONE 85%', '1 KG ( 2X 500 GRS)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('32', 'CLOMAZERB 48 EC', 'HERBICIDA', 'CLOMAZONE 48%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('92', 'CLOMAZONE 36% CS', 'HERBICIDA', 'CLOMAZONE 36% CS IN 20 LTS.', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('51', 'COLINA', 'HERBICIDA', '2,4D SAL COLINA 66,9% + ( 2,4D ACIDO 45,6% )', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('57', 'DICAMBA DGA', 'HERBICIDA', 'DICAMBA SAL DIGLICOLAMINA 70,8% ( DICAMBA ACIDO 48 % )', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('26', 'EXTRAZONE 50 SC', 'HERBICIDA', 'SULFENTRAZONE 50%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('62', 'FLUMET 80 WG', 'HERBICIDA', 'FLUMETSULAM 80%', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('27', 'FLUMITOP 48 SC', 'HERBICIDA', 'FLUMIOXAZIM 48%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('45', 'GLISERB 608 TAMPA', 'HERBICIDA', 'GLIFOSATO DMA 60,8%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('93', 'GLISERB 76 TAMPA', 'HERBICIDA', 'GLIFOSATO DMA 60,8%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('39', 'GLUFOSEC  P40 SL', 'HERBICIDA', 'GLUFOSINATO P 40%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('5', 'GLUFOSEC 40 SL', 'HERBICIDA', 'GLUFOSINATO 40%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('55', 'GLUFOSEC P88 SG', 'HERBICIDA', 'GLUFOSINATO P 88%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('53', 'MESOTRINA 48 SC', 'HERBICIDA', 'MESOTRIONA 48%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('7', 'PARAQUAT TAMPA', 'HERBICIDA', 'PARAQUAT 24%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('29', 'SIGMET 96', 'HERBICIDA', 'S - METOLACLOR 96%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('30', 'SPIRIT 28,8 EC', 'HERBICIDA', 'FLUROXIPYR 28,8%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('59', 'TERBUZIN 90 WG', 'HERBICIDA', 'TERBUTILAZINA 90%', '10 KG', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('31', 'TRICLOTAM', 'HERBICIDA', 'TRICLOPIR 48%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('56', 'SAFLUFEN 70 WG', 'HERBICIDA', 'SAFLUFENACIL 70%', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('102', 'PICLOTAM', 'HERBICIDA', 'PICLORAM SAL POTASICA 278 G/L EQUIV EN PICLORAM 240 G/L SL', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('101', 'FOP TAMPA', 'HERBICIDA', 'HALOXYFOP-P-METHYL 54 % EC', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('99', 'NITRO FORCE 20L', 'HERBICIDA', 'NITROGENIO 30%', '20', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('104', 'AMAR OUT', 'HERBICIDA', 'FOMESAFEN 250 G/L SL', NULL, 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('100', '24D 700', 'HERBICIDA', '2,4-D AMINE 720 G/L SL (EQ EN 2,4D ACIDO 60%)', NULL, 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('6', 'BELUGA', 'INSECTICIDA', 'DIFLUBENZURON 48%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('38', 'BIFENTAM 40 MAX', 'INSECTICIDA', 'BIFENTRIN 40%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('23', 'CLORANTE 80 WG', 'INSECTICIDA', 'CLORANTRANILIPROLE 80%', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('64', 'CLORFENAPIIR 720 WG', 'INSECTICIDA', 'CLORFENAPIR 72%', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('24', 'CYANTRANE 80 WG', 'INSECTICIDA', 'CYANTRANILIPROLE 80%', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('60', 'CYCLOTAMPA 400 SC', 'INSECTICIDA', 'ISOCYCLOSERAM 40%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('14', 'ESCOLTA', 'INSECTICIDA', 'TRIFLUMURON  48%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('61', 'FENTIPROL 60 SC', 'INSECTICIDA', 'BIFENTRIN 25% + ETIPROL 35%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('47', 'FENTIXAN 50 SC', 'INSECTICIDA', 'THIAMETOXAN 30% + BIFENTRIN 20%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('28', 'SALVADOR 35 SC', 'INSECTICIDA', 'IMIDACLOPRID 35%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('46', 'TAMPAMECTIN 30', 'INSECTICIDA', 'BENZOATO DE EMAMECTINA 30 %', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('3', 'THX TAMPA 75', 'INSECTICIDA', 'THIAMETOXAN 75%', '1 KG ( 4X 250 GRS HIDRO)', 'KILO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('9', 'TOXATRIN 50 SC', 'INSECTICIDA', 'THIAMETOXAN 30% + BIFENTRIN 20%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('16', 'FIPRO 25 SC EX1 BLANCO', 'INSECTICIDA', 'FIPRONIL 25%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('87', 'FIPRO 25 SC EX1 ROJO', 'INSECTICIDA', 'FIPRONIL 25%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('72', 'FIPRO 25 SC EX5 BLANCO', 'INSECTICIDA', 'FIPRONIL 25%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('22', 'CYPIR 253 SC', 'FUNGICIDA', 'PYRACLOSTROBIN 13,3% + CYPROCONAZOLE 12%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('34', 'DIFEZOLE 30 EC', 'FUNGICIDA', 'DIFECONAZOLE 30%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('54', 'FENPRO TAMPA 75', 'FUNGICIDA', 'FEMPROPIMORFE 75%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('17', 'FLOXY PRO EXTRA', 'FUNGICIDA', 'TRIFLOXYSTROBIN 15% + PROTHIOCONAZOL 17.5% + BIXAFEN 12.5%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('2', 'PICONAZOL 375 SC', 'FUNGICIDA', 'PICOXYSTROBIN 20% + PROTHICONAZOLE 17,5 %', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('33', 'TAMPRONIL 720 SC', 'FUNGICIDA', 'CLOROTALONIL 72%', '20 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('63', 'TEBUDIFEN 40 SC', 'FUNGICIDA', 'DIFENOCONAZOLE 20% + TEBUCONAZOLE 20%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('48', 'TEBUZOLE 43 SC', 'FUNGICIDA', 'TEBUCONAZOLE 43%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('103', 'FLUXAPIROSAD 300 GL', 'FUNGICIDA', 'FLUXAPIROSAD 300 GL', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('58', 'CIANTRAMIX FS', 'CURA SEMILLAS', 'CIANTRANILIPROLI 12% + FLUDIOXONIL 1,25% + METALAXIL 1% + THIAMETOXAN 24%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('69', 'CIANTRAMIX FS', 'CURA SEMILLAS', 'CIANTRANILIPROLI 12% + FLUDIOXONIL 1,25% + METALAXIL 1% + THIAMETOXAN 24%', '4X5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('68', 'CIANTRAMIX FS', 'CURA SEMILLAS', 'CIANTRANILIPROLI 12% + FLUDIOXONIL 1,25% + METALAXIL 1% + THIAMETOXAN 24%', '0.5', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('1', 'CLORANTE 625 FS', 'CURA SEMILLAS', 'CLORANTRANILIPROLI 62,5%', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('25', 'DUSILAN SP SILICONADO', 'ADJUVANTE', 'ADJUVANTE SILICONADO', '12X1', 'UNIDAD', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
+INSERT INTO products (internal_code, name, category, active_ingredient, presentation, unit, min_stock, active) VALUES ('0', 'INPASA OIL', 'ADJUVANTE DE MAIZ', 'ADJUVANTE VEGETAL DE MAIZ 93% + EMULCIFICANTE', '20 LTS O 10 LTS', 'LITRO', 0, TRUE) ON CONFLICT (internal_code) DO NOTHING;
 `;
 const authRouter = express.Router();
 authRouter.post('/login', async (req, res) => {
@@ -643,12 +700,29 @@ productsRouter.post('/:id/deactivate', async (req, res, next) => {
 
 
 const stockRouter = express.Router();
-// Vista general: producto x deposito, con totales y estado (verde/amarillo/rojo)
+
+// Calcula el estado de un producto segun la logica de 4 estados acordada:
+// DISPONIBLE / STOCK_BAJO / SIN_STOCK / SIN_MOVIMIENTO
+function computeStatus({ qty, minStock, hasMovement }) {
+  const min = parseFloat(minStock) || 0;
+  if (qty > 0) {
+    return qty > min ? 'DISPONIBLE' : 'STOCK_BAJO';
+  }
+  // qty === 0
+  if (hasMovement || min > 0) return 'SIN_STOCK';
+  return 'SIN_MOVIMIENTO';
+}
+
+// Vista general: producto x deposito, con totales, semaforo y alertas resumidas.
+// Si se pasa warehouseId, el total/estado/alertas quedan acotados a ese deposito
+// (asi las tarjetas de alerta reflejan solo lo de ese deposito, como se pidio).
 stockRouter.get('/', async (req, res, next) => {
   try {
-    const { warehouseId, category, lowStock, noStock, search } = req.query;
+    const { warehouseId, category, status, search } = req.query;
 
-    const { rows: warehouses } = await pool.query(`SELECT id, name FROM warehouses WHERE active=TRUE ORDER BY name`);
+    const { rows: warehouses } = await pool.query(`
+      SELECT w.id, w.name, COALESCE((SELECT SUM(s.quantity) FROM stock s WHERE s.warehouse_id=w.id),0) AS total
+      FROM warehouses w WHERE w.active=TRUE ORDER BY w.name`);
 
     const params = [];
     const clauses = ['p.active = TRUE'];
@@ -661,6 +735,10 @@ stockRouter.get('/', async (req, res, next) => {
 
     const { rows: stockRows } = await pool.query(`
       SELECT product_id, warehouse_id, SUM(quantity) AS qty FROM stock GROUP BY product_id, warehouse_id`);
+    const { rows: movedRows } = await pool.query(`
+      SELECT DISTINCT smi.product_id FROM stock_movement_items smi
+      JOIN stock_movements sm ON sm.id = smi.movement_id WHERE sm.type = 'ENTRADA'`);
+    const movedSet = new Set(movedRows.map((r) => r.product_id));
 
     const stockMap = {};
     for (const r of stockRows) {
@@ -675,17 +753,22 @@ stockRouter.get('/', async (req, res, next) => {
         byWarehouse[w.id] = qty;
         total += qty;
       }
-      let status = 'NORMAL';
-      if (total <= 0) status = 'CRITICO';
-      else if (p.min_stock && total <= parseFloat(p.min_stock)) status = 'BAJO';
-      return { ...p, byWarehouse, total, status };
+      const scopedQty = warehouseId ? (byWarehouse[warehouseId] || 0) : total;
+      const st = computeStatus({ qty: scopedQty, minStock: p.min_stock, hasMovement: movedSet.has(p.id) });
+      return { ...p, byWarehouse, total, scopedQty, status: st };
     });
 
-    if (warehouseId) result = result.filter((r) => (r.byWarehouse[warehouseId] || 0) > 0);
-    if (lowStock === 'true') result = result.filter((r) => r.status === 'BAJO');
-    if (noStock === 'true') result = result.filter((r) => r.status === 'CRITICO');
+    // conteos para las tarjetas de alerta, acotados al mismo filtro de deposito
+    const alertCounts = {
+      SIN_STOCK: result.filter((r) => r.status === 'SIN_STOCK').length,
+      STOCK_BAJO: result.filter((r) => r.status === 'STOCK_BAJO').length,
+      DISPONIBLE: result.filter((r) => r.status === 'DISPONIBLE').length,
+      SIN_MOVIMIENTO: result.filter((r) => r.status === 'SIN_MOVIMIENTO').length,
+    };
 
-    res.json({ warehouses, products: result });
+    if (status && status !== 'TODOS') result = result.filter((r) => r.status === status);
+
+    res.json({ warehouses, products: result, alertCounts });
   } catch (err) { next(err); }
 });
 
