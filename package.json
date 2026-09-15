@@ -1,6 +1,6 @@
 {
   "name": "agroforce-tampa-stock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Control de stock multideposito AGROFORCE + TAMPA - linea de pasturas",
   "main": "server.js",
   "scripts": {
